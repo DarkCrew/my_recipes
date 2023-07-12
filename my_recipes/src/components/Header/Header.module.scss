@@ -1,0 +1,39 @@
+@import url('../../variables/Variables.module.scss');
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  background: var(--color-yellow);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  height: 30px;
+  gap: 7px;
+  cursor: pointer;
+
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.logoName {
+  color: var(--color-black);
+  align-self: center;
+  font-family: 'Montserrat-Medium';
+  font-size: 16px;
+}
+
+.title {
+  font-family: 'Montserrat-Regular';
+  text-transform: uppercase;
+  font-size: 18px;
+}
