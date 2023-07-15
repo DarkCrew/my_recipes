@@ -5,6 +5,7 @@ import Dessert from 'pages/Dessert/Dessert';
 import Drink from 'pages/Drink/Drink';
 import HomePage from 'pages/HomePage/HomePage';
 import Semolina from 'pages/InfoPage/Breakfast/Semolina/Semolina';
+import Cutlet from 'pages/InfoPage/Lunch/Cutlet/Cutlet';
 import Lunch from 'pages/Lunch/Lunch';
 
 import './App.css';
@@ -17,6 +18,7 @@ const App = (): ReactElement => {
       <Route path="/" element={<HomePage />} />
       <Route path="/breakfast" element={<Breakfast />} />
       <Route path="/breakfast/semolina" element={<Semolina />} />
+      <Route path="/lunch/cutlet" element={<Cutlet />} />
       <Route path="/lunch" element={<Lunch />} />
       <Route path="/dessert" element={<Dessert />} />
       <Route path="/drink" element={<Drink />} />

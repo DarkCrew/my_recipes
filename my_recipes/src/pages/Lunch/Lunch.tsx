@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from 'components/Header/Header';
 
-import donutPhoto from '../../assets/images/donut.jpg';
+import cutlet from '../../assets/images/cutlet.jpg';
 import lunchPhoto from '../../assets/images/lunch.jpg';
-import Semolina from '../../assets/images/Semolina.png';
 
 import styles from './Lunch.module.scss';
 
@@ -30,43 +30,15 @@ const Lunch = (): ReactElement => {
         </div>
         <div className={styles.recipesContainer}>
           <div className={styles.recipe}>
-            <img src={Semolina} alt="recipe" />
+            <img src={cutlet} alt="recipe" />
             <div className={styles.recipeInfo}>
               <div className={styles.recipeText}>
-                <p className={styles.recipeTitle}>Semolina</p>
-                <p className={styles.recipeSubTitle}>
-                  Semolina is a simple dish, which need some milk and 15 minutes your time
-                </p>
+                <p className={styles.recipeTitle}>Cutlet</p>
+                <p className={styles.recipeSubTitle}>Cutlet is fatty, but tasty dish</p>
               </div>
-              <button className={styles.recipeBtn} type="button">
+              <Link to="cutlet" className={styles.recipeBtn} type="button">
                 Look recipe
-              </button>
-            </div>
-          </div>
-
-          <div className={styles.recipe}>
-            <img src={donutPhoto} alt="recipe" />
-            <div className={styles.recipeInfo}>
-              <div className={styles.recipeText}>
-                <p className={styles.recipeTitle}>Donut</p>
-                <p className={styles.recipeSubTitle}>Donut is simple dish</p>
-              </div>
-              <button className={styles.recipeBtn} type="button">
-                Look recipe
-              </button>
-            </div>
-          </div>
-
-          <div className={styles.recipe}>
-            <img src={donutPhoto} alt="recipe" />
-            <div className={styles.recipeInfo}>
-              <div className={styles.recipeText}>
-                <p className={styles.recipeTitle}>Donut</p>
-                <p className={styles.recipeSubTitle}>Donut is simple dish</p>
-              </div>
-              <button className={styles.recipeBtn} type="button">
-                Look recipe
-              </button>
+              </Link>
             </div>
           </div>
         </div>

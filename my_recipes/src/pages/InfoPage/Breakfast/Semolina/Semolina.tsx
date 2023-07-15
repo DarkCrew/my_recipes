@@ -29,11 +29,21 @@ const Semolina = (): ReactElement => {
           <div className={styles.ingredients}>
             <p className={styles.ingredientsTitle}>Ingredients</p>
             <div className={styles.ingredientsItems}>
-              <p>&bull; 350 ml of milk</p>
-              <p>&bull; 150 ml of water</p>
-              <p>&bull; 3 tablespoons of semolina</p>
-              <p>&bull; 1 pinch of salt</p>
-              <p>&bull; 1 small piece of button</p>
+              <p>
+                &bull; <b>350</b> ml of milk
+              </p>
+              <p>
+                &bull; <b>150</b> ml of water
+              </p>
+              <p>
+                &bull; <b>3</b> tablespoons of semolina
+              </p>
+              <p>
+                &bull; <b>1</b> pinch of salt
+              </p>
+              <p>
+                &bull; <b>1</b> small piece of button
+              </p>
             </div>
           </div>
 
