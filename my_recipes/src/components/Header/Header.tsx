@@ -13,7 +13,8 @@ const Header = (): ReactElement => {
 
   const checkLocation = (): void => {
     const pathName = location.pathname.substring(1);
-    setCurrentUrl(pathName);
+    const nicePathName = pathName.includes('/') ? pathName.split('/').join(' ') : pathName;
+    setCurrentUrl(nicePathName);
   };
 
   React.useEffect(() => {

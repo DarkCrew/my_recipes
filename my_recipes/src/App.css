@@ -40,11 +40,11 @@ button::-moz-focus-inner {
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-  background-color: #1f1d2c;
+  background-color: #000000;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: linear-gradient(180deg, #1f1d2c, #806dff);
+  background: linear-gradient(180deg, #ffdb63, #fcc615);
 }
