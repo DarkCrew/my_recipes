@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Breakfast from 'pages/Breakfast/Breakfast';
 import Dessert from 'pages/Dessert/Dessert';
 import Drink from 'pages/Drink/Drink';
@@ -14,6 +14,11 @@ import './styles/normalize.css';
 import './styles/index.css';
 
 const App = (): ReactElement => {
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />

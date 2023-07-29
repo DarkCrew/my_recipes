@@ -116,7 +116,7 @@ const Cutlet = (): ReactElement => {
             <div className={styles.cookingSteps}>
               <p className={styles.cookingStep}>9</p>
               <p>
-                Your cutlets are ready! Now you can add a yummy delicious side to these cutlets. For
+                Your cutlets are ready! Now you can add a yummy side dish to these cutlets. For
                 example, it can be: mashed potatoes, rice, buckwheat or pasta.
               </p>
             </div>

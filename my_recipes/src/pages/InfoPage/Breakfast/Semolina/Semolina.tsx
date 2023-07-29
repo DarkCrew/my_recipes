@@ -42,7 +42,7 @@ const Semolina = (): ReactElement => {
                 &bull; <b>1</b> pinch of salt
               </p>
               <p>
-                &bull; <b>1</b> small piece of button
+                &bull; <b>1</b> small piece of butter
               </p>
             </div>
           </div>
