@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 
 import Header from 'components/Header/Header';
 
-import cutlet from '../../assets/images/cutlet.jpg';
+import cutletImg from '../../assets/images/cutlet.jpg';
 import lunchPhoto from '../../assets/images/lunch.jpg';
+import shawarmaImg from '../../assets/images/shawarma.jpg';
 
 import styles from './Lunch.module.scss';
 
@@ -30,13 +31,28 @@ const Lunch = (): ReactElement => {
         </div>
         <div className={styles.recipesContainer}>
           <div className={styles.recipe}>
-            <img src={cutlet} alt="recipe" />
+            <img src={cutletImg} alt="recipe" />
             <div className={styles.recipeInfo}>
               <div className={styles.recipeText}>
                 <p className={styles.recipeTitle}>Cutlet</p>
                 <p className={styles.recipeSubTitle}>Cutlet is fatty, but tasty dish</p>
               </div>
               <Link to="cutlet" className={styles.recipeBtn} type="button">
+                Look recipe
+              </Link>
+            </div>
+          </div>
+
+          <div className={styles.recipe}>
+            <img src={shawarmaImg} alt="recipe" />
+            <div className={styles.recipeInfo}>
+              <div className={styles.recipeText}>
+                <p className={styles.recipeTitle}>Shawarma</p>
+                <p className={styles.recipeSubTitle}>
+                  Shawarma is absolutely fast food, but delicious
+                </p>
+              </div>
+              <Link to="shawarma" className={styles.recipeBtn} type="button">
                 Look recipe
               </Link>
             </div>
